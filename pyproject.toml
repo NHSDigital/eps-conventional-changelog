@@ -1,0 +1,31 @@
+[project]
+python = "^3.8"
+
+[tool.poetry]
+name = "eps-conventional-changelog"
+description = "A conventional changelog parser used by EPS team"
+version = "0.0.1-alpha"
+authors = [
+  "Anthony Brown <anthony.brown8@nhs.net>",
+  "Matthew Popat <matthew.popat1@nhs.net>",
+  "Phil Gee <phil.gee@nhs.net>",
+  "Kris Szlapa <kris.szlapa1@nhs.net>",
+  "Jack Spagnoli <jack.spagnoli1@nhs.net>",
+  "Tom Smith <tom.smith24@nhs.net>",
+  "Adam Brown <adam.brown41@nhs.net>",
+  "Sean Steberis <sean.steberis2@nhs.net>",
+  "Jonathan Welch <jonathan.welch1@nhs.net>",
+  "Jim Wild <james.wild6@nhs.net>",
+]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/NHSDigital/eps-conventional-changelog"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pip-licenses = "^4.4.0"
+pre-commit = "^3.5.0"
+
+[tool.poetry.scripts]

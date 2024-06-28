@@ -1,0 +1,52 @@
+{
+  "name": "eps-conventional-changelog",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "EPS preset for conventional-changelog.",
+  "author": "NHSDigital",
+  "license": "MIT",
+  "homepage": "https://github.com/NHSDigital/eps-conventional-changelog#README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NHSDigital/eps-conventional-changelog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NHSDigital/eps-conventional-changelog/issues"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "eslint",
+    "preset"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc && cp -r src/templates/ lib/",
+    "lint": "eslint . --fix",
+    "check-licenses": "license-checker --failOn GPL --failOn LGPL",
+    "test": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "conventional-changelog-core": "^8.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import-newlines": "^1.4.0",
+    "license-checker": "^25.0.1",
+    "prettier": "^3.3.2",
+    "semantic-release": "^24.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  }
+}
