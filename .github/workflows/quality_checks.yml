@@ -56,9 +56,7 @@ jobs:
         run: make build
 
       - name: run unit tests
-        run: |
-          make test
-          ls coverage
+        run: make test
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
